@@ -1,6 +1,6 @@
 var typed = new Typed('.typed', {
 	strings: [
-		'<i class=Aurora Montilla/i>'
+		'<i class="mascota">Aurora Montilla'
 	],
 	stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
 	typeSpeed: 75, // Velocidad en mlisegundos para poner una letra,
