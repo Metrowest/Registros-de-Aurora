@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Precursorado Auxiliar</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+
+<body>
+  <form method="post" autocomplete="off" name="google-sheet" action="" class="formulario">
+    
+    <div class="container">
+        <nav>
+            <div class="nav-responsive">
+
+                <!--<div class="nav-search">
+                    <a href="">
+                        <i class="fa fa-search" id="find">
+                        </i>
+                    </a>
+                    <input type="text" id="search" placeholder="Search your items, brands">
+                </div>-->
+
+                
+                <nav id="site-nav" class="site-nav">
+                    <ul>
+                        <li><a href="precursorado.html">Precursorado</a></li>
+                        <li><a href="https://drive.google.com/drive/folders/1_wBul4YatOkcStdVcmIv9H9HA4e-IYeN?usp=sharing">Territorio</a></li>               
+                        <li><a href="literatura.html">Literatura</a></li>
+                        <li><a href="index.html">Registros</a></li>   
+                    </ul>
+                </nav>
+                <div id="menu-toggle" class="menu-toggle" onClick="cambiarClase()">
+                    <div class="hamburger"></div>
+                </div>
+            </div>
+            <div class="img">
+              <img src="img/Predica.jpg">
+            </div>
+        </nav>
+
+          <h3 class="formulario__subtitulo">Aplique por WhatsApp para el precursorado auxiliar<h3>
+          <div class="formulario__parrafo">
+            <p><br>Debido a mi amor a Jehová y mi deseo de ayudar al prójimo a
+              aprender acerca de él y sus amorosos propósitos, quisiera
+              aumentar mi participación en el servicio del campo siendo precursor
+              auxiliar durante el período indicado abajo:</p>
+          </div><br><br>
+
+          <div class="inputs">
+            <input type="text" name="Mes" id="Mes" required>
+            <label>El Mes (los meses) de:</label>
+          </div>
+
+          <div class="form-check">
+            <label class="form-check-label" for="flexCheckDefault">¿Desea usted servir como Prec. Aux. de “continuo”, 
+              o sea indefinidamente y así cumplir con el requisito de 50 horas (30 horas en tiempo de campañas)?<br>
+              <br>Como recordatorio, una vez aprobado para ser Prec. Aux. de “continuo”, si durante un mes en particular 
+              no puede cumplir con el requisito de horas se le dará de baja y tendrá que aplicar otra vez.
+            </label>            
+            <select input id="Decontinuo" name="De continuo" class="form-check-input" type="radius"onchange="this.className=this.options[this.selectedIndex].className"
+            class="flechas">
+              <option class="flechas" selected="true">--Seleccione--</option>
+              <option class="flechasRoja" value="No">------No------</option>
+              <option class="flechasVerde" value="Si, de continuo">Si, de continuo</option>
+            </select>
+
+          </div>
+
+          <div class="formulario__parrafo">
+            <p><br>Gozo de una buena reputación moral y tengo buenos
+              hábitos. He
+              hecho planes para satisfacer el requisito de horas. (Vea
+              Nuestro
+              Ministerio del Reino de junio de 2013, página
+              2).</p><br>
+          </div>
+
+          <div>          
+              <div class="inputs">
+                <input type="date" name="Fecha" id="Fecha" required>
+                <label>Fecha</label>
+              </div>
+
+              <div class="inputs">
+                <input type="text" name="Nombre" id="Nombre" required>
+                <label>Nombre</label>
+              </div>
+
+              <div class="inputs">
+                <input type="text" name="Apellido" id="Apellido" required>
+                <label>Apellido</label>
+              </div>
+            
+          </div>
+          <div class="formulario__parrafo">
+            <p8><br />NOTA: Después de llenar la forma presione el botón “Confirme en WhatsApp”. Una vez confirme la
+              solicitud en WhatsApp, estará listo para enviar su solicitud. El mensaje será dirigido al coordinador del cuerpo de ancianos.</p8>
+          </div>
+
+            <div id="respuesta"></div>
+            <button id="submit" class="formulario__submit">Confirme en WhatsApp</button><br>
+
+    </div>
+    
+    </div>
+  </form>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzuXVZRlhBenjU58cEqfSHFAt5T6tHpFt5rs6M-Q0GV78u0SHhRJbIQuymF5TJp3YXhDA/exec'
+    const form = document.forms['google-sheet']
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => alert("Confirme su solicitud en WhatsApp"))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/apps.js"></script>
+  <script src="js/prec.js"></script>
+</body>
+
+</html>
