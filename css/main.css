@@ -14,18 +14,7 @@ body {
   font-family: 'Lato';
   background-color: #04416c6e;
 }
-.container {
-    background-color: rgb(255, 225, 187);
-    max-width: 900px;
-    width: 100%;
-    margin: 40px auto;
-    margin-top: 40px;
-    margin-right: auto;
-    margin-bottom: 40px;
-    margin-left: auto;
-    padding: 30px;
-    border-radius: 20px;
-}
+.container,
 .content {
     margin-left: auto;
     max-width: 900px;
@@ -34,22 +23,23 @@ body {
     padding: 30px;
     margin-right: auto;
     border-radius: 10px;
-    margin-top: 10px;
-    display: flex;
-    align-content: space-around;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    margin-top:50px;
 }
+
 .section-header {
-  font-weight: bold;
-  text-align: center;
-  font-size: 2em;
-  color: white;
-  background: linear-gradient(-135deg, #c3d6f8, #005691);
-  box-shadow: 0 0 3px 1px;
-  border-radius: 20px;
-  margin: auto;
-  width: 100%;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    background: linear-gradient(-135deg, #c3d6f8, #005691);
+    box-shadow: 0 0 3px 1px;
+    border-radius: 20px;
+
+
+    margin-right: auto;
+
+    margin-left: auto;
+    width: 100%;
 }
 
 .section-header5 {
@@ -88,13 +78,13 @@ body {
   display: flex;
 }
 
-h2#section-header0 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: nowrap;
-  margin-bottom: 10px;
+h2#section-header10 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    margin-top:20px;
 }
 
 .button1 {
