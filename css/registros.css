@@ -8,15 +8,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  .container{
-    max-width: 900px;
-    width: 100%;
-    background: #f7edd0;
-    margin: 20px auto;
-    box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
-    padding: 30px;
-    border-radius: 20px;
-  }
+
   
   .container .title{
     font-size: 24px;
