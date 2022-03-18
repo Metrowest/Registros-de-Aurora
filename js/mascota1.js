@@ -1,7 +1,6 @@
 var typed = new Typed('.typed', {
 	strings: [
-		'<i class="mascota">Este Web APP es de prueba,</i>',
-		'<i class="mascota">Solicite una copia.</i>'
+		'<i class="mascota">Aurora Montilla</i>'
 	],
 	stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
 	typeSpeed: 75, // Velocidad en mlisegundos para poner una letra,
